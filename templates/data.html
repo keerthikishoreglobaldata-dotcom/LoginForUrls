@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Task</title>
+</head>
+<body>
+<table border="1" cellpadding="8" style="margin:auto;">
+        <thead>
+        <tr>
+          {% for col in columns %}
+          <th>{{ col }}</th>
+          {% endfor %}
+        </tr>
+        </thead>
+  <tbody>
+   {% for dat in data %}
+        <tr>
+          {% for cell in dat %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+   {% endfor %}
+  </tbody>
+
+</table>
+</body>
+</html>
